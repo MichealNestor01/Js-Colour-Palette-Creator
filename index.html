@@ -1,0 +1,285 @@
+<!--Created by Micheal Nestor -> michealnestor@outlook.com-->
+<!--This is the html file for my color palette project-->
+<!--It is a webapp that allows users to create and save 5 color palettes-->
+<!--If you see 'prettier-ignore' anywhere in the code ignore it, prettier is my code formatter and sometimes it is silly-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Palette Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!--These are links to google fonts and icons-->
+    <!--prettier-ignore-->
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Colors contians the 5 color sections for the color palette-->
+    <div class="colors">
+      <!--Each color has its own div each of which is identical, so I am only commenting one of them-->
+      <div class="color">
+        <!--Hex will be replaced with the color's hex code, also a user can click the hex code to have it coppied to their clipboard-->
+        <h2>Hex</h2>
+        <!--These are just buttons to open the sliders and lock the color in-->
+        <div class="controls">
+          <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <!--Sliders are used to adjust the color's properties-->
+        <div class="sliders">
+          <!--There is an input slider for each color property, hue, saturation and brightness-->
+          <button class="close-adjustments">X</button>
+          <span>hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="0"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="0"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="saturation"
+            class="sat-input"
+            data-sat="0"
+          />
+        </div>
+      </div>
+      <div class="color">
+        <h2>Hex</h2>
+        <div class="controls">
+          <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustments">X</button>
+          <span>hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="1"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="1"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="saturation"
+            class="sat-input"
+            data-sat="1"
+          />
+        </div>
+      </div>
+      <div class="color">
+        <h2>Hex</h2>
+        <div class="controls">
+          <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustments">X</button>
+          <span>hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="2"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="2"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="saturation"
+            class="sat-input"
+            data-sat="2"
+          />
+        </div>
+      </div>
+      <div class="color">
+        <h2>Hex</h2>
+        <div class="controls">
+          <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustments">X</button>
+          <span>hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="3"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="3"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="saturation"
+            class="sat-input"
+            data-sat="3"
+          />
+        </div>
+      </div>
+      <div class="color">
+        <h2>Hex</h2>
+        <div class="controls">
+          <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustments">X</button>
+          <span>hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="4"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="4"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="saturation"
+            class="sat-input"
+            data-sat="4"
+          />
+        </div>
+      </div>
+    </div>
+    <!--The panel is a section at the bottom of the page with 3 buttons-->
+    <div class="panel">
+      <!--Library button brings up the library of palets the user has previoulsy saved-->
+      <div class="library-panel">
+        <button class="library"><i class="fas fa-book-open"></i></button>
+        <p>Library</p>
+      </div>
+      <!--The generate button replaces any unlocked colors with a new random color-->
+      <div class="generate-panel">
+        <button class="generate"><i class="fas fa-sync"></i></button>
+        <p>Generate</p>
+      </div>
+      <!--Save button brings up a window for a user to give their palette a name and save it-->
+      <div class="save-panel">
+        <button class="save"><i class="fas fa-save"></i></button>
+        <p>Save</p>
+      </div>
+    </div>
+    <!--Copy Popup appears as a confirmation after you have clicked a hex code-->
+    <div class="copy-container">
+      <div class="copy-popup">
+        <h3>Copied to clipboard!</h3>
+        <h4>&#128077;</h4>
+      </div>
+    </div>
+    <!--The save window where you can give your palete a name and save it-->
+    <div class="save-container">
+      <div class="save-popup">
+        <button class="close-save">X</button>
+        <h4>Give your palette a name!</h4>
+        <!--A little preview of a users palette they are going to save-->
+        <div class="palette-container">
+          <div class="palette-color"></div>
+          <div class="palette-color"></div>
+          <div class="palette-color"></div>
+          <div class="palette-color"></div>
+          <div class="palette-color"></div>
+        </div>
+        <input type="text" max-length="30" class="save-name" />
+        <button type="submit" class="submit-save">Save</button>
+      </div>
+    </div>
+    <!--The window where you can select saved palettes-->
+    <div class="library-container">
+      <!--The elements in library popup are generated using javascript-->
+      <div class="library-popup">
+        <button class="close-library">X</button>
+        <h4>Pick your palette!</h4>
+      </div>
+    </div>
+    <!--Script to link my js file and also the chroma-js library I am using-->
+    <!--prettier-ignore-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha256-gX8uuyxN8stSMHWO9arnnKyenTOALaVAcVB3b6P87e4=" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
